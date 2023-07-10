@@ -1,0 +1,319 @@
+/*FUENTES*/
+@font-face {
+    font-family: "fajala";
+    src: url(../Claudia_llanos/assets/fonts/fuente.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#caja-contador {
+    display: flex;
+    margin-right: 20px;
+    width: 180px;
+    align-self: center;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+
+#caja-contador span {
+    font-family: "fajala", Helvetica;
+    font-weight: bold;
+    font-size: 30px;
+    margin-right: 5px;
+}
+
+#contador {
+
+    padding: 5px 10px;
+    border-radius: 200px;
+    font-size: 30px;
+    color: black;
+    font-weight: bold;
+    font-family: "fajala", Helvetica;
+}
+
+#caja-header {
+    position: fixed;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    display: flex;
+    background-image: linear-gradient(to right,blue, red);
+    justify-content: space-around;
+    align-items: end;
+    height: 100px;
+    margin: 0%;
+    border: 3px solid gray;
+
+}
+
+#caja-login {
+    background: red;
+    width: 230px;
+
+}
+
+.header {
+    margin: 0%;
+    padding: 0%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f1f1f1;
+
+}
+
+#main {
+    position: relative;
+    margin-top: 20px;
+    /* Ajusta el valor del margen superior según la altura de tu cabecera */
+}
+
+/*GENERALES*/
+* {
+    font-family: Helvetica;
+    text-decoration: none;
+}
+
+.clearfix {
+    clear: both;
+    float: none;
+}
+
+body {
+    background: url(../Claudia_llanos/assets/img/Fondo.png) #F4F4F4;
+}
+
+
+/*CABECERA*/    
+/*LOGOTIPO*/
+.logo-container img {
+    width: 200px;
+    /* Cambia el valor para ajustar el ancho deseado */
+    height: 80px;
+    /* La altura se ajustará automáticamente para mantener la proporción */
+}
+
+.logo-pie img {
+    width: 200px;
+    /* Cambia el valor para ajustar el ancho deseado */
+    height: 80px;
+    /* La altura se ajustará automáticamente para mantener la proporción */
+}
+
+#logo a {
+    font-family: "fajala", Helvetica;
+    font-size: 80px;
+    letter-spacing: 2px;
+    color: #2979CD;
+    text-shadow: 0px 0px 0px black, 1px 1px 0px black, 2px 2px 0px black;
+    transition: all 500ms;
+    line-height: 90px;
+    margin-left: 10px;
+}
+
+#logo a:hover {
+    cursor: pointer;
+    text-shadow: 0px 0px 0px black, -1px -1px 0px black, -2px -2px 0px black;
+}
+
+.ingresar-datos {
+    margin-bottom: 20px;
+}
+
+.ingresar-datos h2 {
+    font-family: "fajala", Helvetica;
+    letter-spacing: 5px;
+    font-size: 24px;
+    color: #333;
+    text-align: left;
+}
+
+/* Estilos para el formulario */
+.form-container {
+    margin-top: 90px;
+    max-width: 100%;
+    padding: 2px;
+    border: 2px solid #272323;
+    border-radius: 5px;
+}
+
+.form-row {
+    display: inline-flex;
+    margin-bottom: 10px;
+}
+
+
+label {
+    display: inline-block;
+    width: 80px;
+    font-weight: bold;
+}
+
+input[type="text"] {
+    width: 200px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+input[type="submit"] {
+    padding: 8px 10px;
+    background-color: #007bff;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para la tabla */
+.table-container {
+    margin-top: 20px;
+    max-height: 700px;
+    /* Ajusta la altura máxima según tus necesidades */
+    overflow: auto;
+    /* Aparecerá una barra de desplazamiento si el contenido supera la altura máxima */
+}
+
+table {
+    height: 400px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th,
+table td {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 0px;
+    text-align: center;
+    border-bottom: 1px solid #020202;
+}
+
+table td {
+    font-size: 12px;
+    /* Tamaño de fuente más pequeño */
+}
+
+#table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#table th,
+td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+#table th {
+    background-color: #f2f2f2;
+}
+
+#filtros {
+    display: flex;
+    justify-content: space-around;
+    height: 30px;
+
+
+}
+
+#filtros a {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#filtros a:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para la paginación */
+.pagination {
+    margin-top: 20px;
+}
+
+.pagination a {
+    display: inline-block;
+    padding: 8px 12px;
+    background-color: #f2f2f2;
+    color: #333;
+    text-decoration: none;
+    border: 1px solid #ddd;
+    margin-right: 5px;
+}
+
+
+.pagination a:hover {
+    background-color: #ddd;
+}
+
+.pagination a.active {
+    background-color: #4749f1;
+    color: white;
+}
+
+/*Estilos Boton Eliminar*/
+.btn-danger {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 5px 16px;
+    border-radius: 4px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn-danger:hover {
+    background-color: #ff0119;
+}
+
+/*Estilos Boton Editar*/
+.btn-editar {
+    text-align: center;
+    display: flex;
+    padding: 5px 16px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-editar:hover {
+    background-color: #0056b3;
+}
+
+
+/* Estilos para el pie de página */
+#pie {
+    position: relative;
+    bottom: 0%;
+    left: 0%;
+    display: flex;
+    background-color: white;
+    margin: 0%;
+    padding: 10px;
+    font-size: 13px;
+    justify-content: space-around;
+    align-items: stretch;
+    height: 30px;
+    width: 100%;
+}
+
+
+#pie p {
+    text-align: center;
+    height: 20px;
+    align-self: center;
+}
